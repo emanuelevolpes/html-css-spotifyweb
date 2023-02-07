@@ -71,8 +71,28 @@ Header
     width: 1.5625rem;
 }
 
-#sidebar .container .bottom-sidebar div:last-child{
-    margin-top: .625rem;
+#sidebar .container .bottom-sidebar{
+    margin-bottom: 6.25rem;
+}
+
+/*
+------
+Main
+------
+*/
+
+main .container{
+    background-color: #141922;
+    width: 100vw;
+    overflow: auto;
+}
+
+main .container #top-main ul{
+    list-style: none;
+}
+
+main .container #top-main ul li{
+    color: gray;
 }
 
 /*
@@ -80,3 +100,63 @@ Header
 Footer
 ------
 */
+
+footer{
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+footer .container{
+    height: 5.625rem;
+}
+
+footer .container .left div img{
+    height: 1.875rem;
+    width: 1.875rem;
+    margin-left: .3125rem;
+}
+
+footer .container .left .desctiption-song{
+    color: white;
+    line-height: .75rem;
+    margin-left: .625rem;
+}
+
+footer .container .left .fa-regular{
+    color: gray;
+    margin-left: 1.25rem;
+}
+
+footer .container .center div .fa-solid{
+    font-size: 1.25rem;
+    color: white;
+    padding: .9375rem .9375rem 0 .9375rem;
+}
+
+footer .container .center div .fa-regular{
+    font-size: 2.1875rem;
+    color: white;
+    padding: 1.5625rem;
+}
+
+footer .container .center .progress-bar{
+    border: .125rem solid gray;
+    margin-bottom: 1.25rem;
+}
+
+footer .container .right{
+    margin: .3125rem;
+}
+
+footer .container .right div .fa-solid{
+    color: white;
+    margin: .3125rem;
+}
+
+footer .container .right .progress-bar{
+    border: .125rem solid gray;
+    width: 3.125rem;
+}
