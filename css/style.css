@@ -20,11 +20,11 @@ Common
     display: flex;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.justify-between{
+.justify-between {
     justify-content: space-between;
 }
 
@@ -32,12 +32,20 @@ Common
     justify-content: center;
 }
 
-.justify-end{
+.justify-end {
     justify-content: flex-end;
 }
 
 .align-center {
     align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -46,33 +54,25 @@ Header
 ------
 */
 
-#upgrade{
-    background-color: black;
-    opacity: 0.2;
+#upgrade {
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
 }
 
-#upgrade .container{
+#upgrade .container {
     height: 5.625rem;
 }
 
-#sidebar .container{
-    background-color: black;
-    height: 100vh;
-    width: fit-content;
-    padding: .625rem;
-}
-
-#sidebar .container .top-sidebar div{
-    margin-bottom: .625rem;
-    width: 1.5625rem;
-}
-
-#sidebar .container .bottom-sidebar{
-    margin-bottom: 6.25rem;
+#upgrade .container button {
+    border: .0625rem solid white;
+    padding: .9375rem 2.1875rem;
+    border-radius: 2.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-right: .625rem;
 }
 
 /*
@@ -81,18 +81,82 @@ Main
 ------
 */
 
-main .container{
+#sidebar {
+    background-color: black;
+}
+
+#sidebar .container {
+    height: 100vh;
+    padding: .625rem;
+}
+
+#sidebar .container .top-sidebar div {
+    margin-bottom: .625rem;
+    width: 1.5625rem;
+}
+
+#sidebar .container .bottom-sidebar {
+    margin-bottom: 6.25rem;
+}
+
+#top-main {
     background-color: #141922;
-    width: 100vw;
+}
+
+#top-main .container {
     overflow: auto;
+    height: 100vh;
+    margin: 6.875rem 1.875rem 6.875rem 1.875rem;
 }
 
-main .container #top-main ul{
+#top-main .container div ul {
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.8125rem;
+    gap: 1.25rem;
 }
 
-main .container #top-main ul li{
+#top-main .container div ul li {
     color: gray;
+    text-align: center;
+    font-size: .8125rem;
+}
+
+.song h2 {
+    margin-left: .625rem;
+    color: white;
+    margin-bottom: 2.1875rem;
+    margin-top: 2.1875rem;
+}
+
+.col {
+    width: calc(100% / 2);
+    padding: .625rem;
+    text-align: center;
+    font-size: .8125rem;
+}
+
+.col div img {
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.col h3 {
+    color: white;
+}
+
+strong {
+    color: gray;
+    font-size: .625rem;
+}
+
+
+
+.col div img.einaudi,
+.col div img.lana {
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /*
@@ -101,7 +165,7 @@ Footer
 ------
 */
 
-footer{
+footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
@@ -109,54 +173,54 @@ footer{
     z-index: 1;
 }
 
-footer .container{
+footer .container {
     height: 5.625rem;
 }
 
-footer .container .left div img{
+footer .container .left div img {
     height: 1.875rem;
     width: 1.875rem;
     margin-left: .3125rem;
 }
 
-footer .container .left .desctiption-song{
+footer .container .left .desctiption-song {
     color: white;
     line-height: .75rem;
     margin-left: .625rem;
 }
 
-footer .container .left .fa-regular{
+footer .container .left .fa-regular {
     color: gray;
     margin-left: 1.25rem;
 }
 
-footer .container .center div .fa-solid{
+footer .container .center div .fa-solid {
     font-size: 1.25rem;
     color: white;
     padding: .9375rem .9375rem 0 .9375rem;
 }
 
-footer .container .center div .fa-regular{
+footer .container .center div .fa-regular {
     font-size: 2.1875rem;
     color: white;
     padding: 1.5625rem;
 }
 
-footer .container .center .progress-bar{
+footer .container .center .progress-bar {
     border: .125rem solid gray;
     margin-bottom: 1.25rem;
 }
 
-footer .container .right{
+footer .container .right {
     margin: .3125rem;
 }
 
-footer .container .right div .fa-solid{
+footer .container .right div .fa-solid {
     color: white;
     margin: .3125rem;
 }
 
-footer .container .right .progress-bar{
+footer .container .right .progress-bar {
     border: .125rem solid gray;
     width: 3.125rem;
 }
