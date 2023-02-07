@@ -63,27 +63,16 @@ Header
     background-color: black;
     height: 100vh;
     width: fit-content;
-    color: white;
     padding: .625rem;
-}
-
-#sidebar .container .top-sidebar{
-    font-size: 1.5625rem;
-    text-align: center;
 }
 
 #sidebar .container .top-sidebar div{
     margin-bottom: .625rem;
+    width: 1.5625rem;
 }
 
 #sidebar .container .bottom-sidebar div:last-child{
-    font-size: 1.5625rem;
     margin-top: .625rem;
-}
-
-#sidebar .container .bottom-sidebar{
-    text-align: center;
-    color: gray;
 }
 
 /*
