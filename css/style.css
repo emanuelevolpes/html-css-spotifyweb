@@ -1,10 +1,93 @@
- /*
- ------
- Reset
- ------
- */
-*{
+/*
+------
+Reset
+------
+*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+------
+Common
+------
+*/
+
+.d-flex {
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/*
+------
+Header
+------
+*/
+
+#upgrade{
+    background-color: black;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#upgrade .container{
+    height: 5.625rem;
+}
+
+#sidebar .container{
+    background-color: black;
+    height: 100vh;
+    width: fit-content;
+    color: white;
+    padding: .625rem;
+}
+
+#sidebar .container .top-sidebar{
+    font-size: 1.5625rem;
+    text-align: center;
+}
+
+#sidebar .container .top-sidebar div{
+    margin-bottom: .625rem;
+}
+
+#sidebar .container .bottom-sidebar div:last-child{
+    font-size: 1.5625rem;
+    margin-top: .625rem;
+}
+
+#sidebar .container .bottom-sidebar{
+    text-align: center;
+    color: gray;
+}
+
+/*
+------
+Footer
+------
+*/
