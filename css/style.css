@@ -180,12 +180,17 @@ footer {
     background-color: #282828;
     position: absolute;
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-footer .left div img {
-    height: 1.875rem;
-    width: 1.875rem;
-    margin-left: .3125rem;
+footer .left div:first-child {
+    width: 3.5rem;
+}
+
+footer .left div img{
+    width: 100%;
+    min-width: 1.875rem;
 }
 
 footer .left .desctiption-song {
@@ -201,13 +206,13 @@ footer .left .fa-regular {
 }
 
 footer .center {
-    width: 50%;
-    margin: 0 1.25rem;
+    width: 60%;
+    padding: 0 1rem;
 }
 
 footer .left,
 footer .right {
-    width: 20%;
+   width: 20%;
 }
 
 footer .center div .fa-solid {
@@ -234,13 +239,9 @@ footer .center .progress-bar {
 
 footer .center .container-p-b {
     align-items: center;
-    padding-bottom: .9375rem;
+    padding: 0 1.5625rem .9375rem 1.5625rem;
     color: gray;
     font-size: 12px;
-}
-
-footer .right {
-    margin: .3125rem;
 }
 
 footer .right div .fa-solid {
