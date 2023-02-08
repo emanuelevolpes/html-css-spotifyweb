@@ -1,0 +1,5 @@
+@media screen and (min-width:640px){
+    .col{
+        width: calc(100% / 4);
+    }
+}
