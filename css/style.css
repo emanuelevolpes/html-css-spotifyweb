@@ -187,6 +187,7 @@ footer .container .left .desctiption-song {
     color: white;
     line-height: .75rem;
     margin-left: .625rem;
+    font-size: .75rem;
 }
 
 footer .container .left .fa-regular {
@@ -203,12 +204,21 @@ footer .container .center div .fa-solid {
 footer .container .center div .fa-regular {
     font-size: 2.1875rem;
     color: white;
-    padding: 1.5625rem;
+    padding: .625rem;
 }
 
 footer .container .center .progress-bar {
-    border: .125rem solid gray;
-    margin-bottom: 1.25rem;
+    height: .25rem;
+    appearance: none;
+    width: 80%;
+    margin: .125rem;
+    border-radius: .5rem;
+    background-color: #5e5e5e;
+}
+
+footer .container .center .container-p-b{
+    align-items: center;
+    padding-bottom: .9375rem;
 }
 
 footer .container .right {
