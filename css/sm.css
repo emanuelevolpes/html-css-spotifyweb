@@ -1,7 +1,7 @@
 @media screen and (min-width: 552px) {
 
 
-    #sidebar .container {
+    .sidebar {
         width: 14.375rem;
     }
 
@@ -13,49 +13,43 @@
         display: none;
     }
 
-    #sidebar .container ul li img.desktop {
-        width: 80%;
+    .sidebar ul li img.desktop {
+        width: 11.25rem;
         height: 5rem;
     }
 
-    #sidebar .container ul li span {
+    .sidebar ul li span {
         color: white;
         font-weight: lighter;
         margin-left: .625rem;
         display: inline;
     }
 
-    #sidebar .navigation {
-        margin-bottom: 12.5rem;
+    .sidebar .navigation {
         min-height: 6.25rem;
         overflow: auto;
     }
 
-    #sidebar .navigation h2,
-    #sidebar .navigation strong {
+    .sidebar .navigation .header-playlist h2,
+    .sidebar .navigation .header-playlist strong {
         padding-bottom: .625rem;
     }
 
-    #sidebar .navigation h2 {
+    .sidebar .navigation h2 {
         color: white;
     }
 
-    /* #sidebar .navigation .playlist-name{
-        min-height: 6.25rem;
-        overflow: auto;
-    } */
-
-    #sidebar .navigation .playlist-name ul {
+    .sidebar .navigation .playlist-name ul {
         list-style: none;
     }
 
-    #sidebar .navigation .playlist-name ul li {
+    .sidebar .navigation .playlist-name ul li {
         color: gray;
         font-weight: lighter;
         padding-bottom: .625rem;
     }
 
-    #sidebar .navigation strong i {
+    .sidebar .navigation strong i {
         background-color: gray;
         color: black;
         font-size: 1.25rem;
@@ -64,7 +58,7 @@
         margin-bottom: .625rem;
     }
 
-    #sidebar .navigation strong {
+    .sidebar .navigation strong {
         color: gray;
     }
 }

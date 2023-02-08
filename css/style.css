@@ -66,7 +66,7 @@ Header
 --------
 */
 
-#upgrade {
+header {
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -74,11 +74,11 @@ Header
     z-index: 1;
 }
 
-#upgrade .container {
+header .container {
     height: 5.625rem;
 }
 
-#upgrade .container button {
+header .container button {
     border: .0625rem solid white;
     padding: .9375rem 2.1875rem;
     border-radius: 2.5rem;
@@ -93,43 +93,44 @@ Main
 ------
 */
 
-#sidebar .container {
+main{
+    max-height: calc(100vh - 90px);
+}
+
+.sidebar{
     background-color: black;
-    height: 100vh;
+    height: calc(100vh - 90px);
     padding: .625rem;
     width: 3.125rem;
 }
 
-#sidebar .container ul li img {
+.sidebar ul li img {
     width: 1.875rem;
     margin-bottom: .625rem;
     vertical-align: middle;
 }
 
-#sidebar .container ul li img.mobile {
+.sidebar ul li img.mobile {
     width: 1.875rem;
 }
 
-#main-menu {
+.main-menu {
     background-color: #141922;
     padding: 1.25rem;
-}
-
-#main-menu .container {
     overflow: auto;
-    height: calc(100vh - 130px);
-    margin-top: 5.625rem;
+    height: calc(100vh - 90px);
 }
 
-#main-menu .container div ul {
+.main-menu div ul {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2.8125rem;
     gap: 1.25rem;
+    padding-top: 90px;
 }
 
-#main-menu .container div ul li {
+.main-menu div ul li {
     color: gray;
     text-align: center;
     font-size: .8125rem;
@@ -181,47 +182,47 @@ footer {
     width: 100%;
 }
 
-footer .container .left div img {
+footer .left div img {
     height: 1.875rem;
     width: 1.875rem;
     margin-left: .3125rem;
 }
 
-footer .container .left .desctiption-song {
+footer .left .desctiption-song {
     color: white;
     line-height: .75rem;
     margin-left: .625rem;
     font-size: .75rem;
 }
 
-footer .container .left .fa-regular {
+footer .left .fa-regular {
     color: gray;
     margin-left: 1.25rem;
 }
 
-footer .container .center {
-    width: 60%;
+footer .center {
+    width: 50%;
     margin: 0 1.25rem;
 }
 
-footer .container .left,
-footer .container .right {
+footer .left,
+footer .right {
     width: 20%;
 }
 
-footer .container .center div .fa-solid {
+footer .center div .fa-solid {
     font-size: 1.25rem;
     color: white;
     padding: .9375rem .9375rem 0 .9375rem;
 }
 
-footer .container .center div .fa-regular {
+footer .center div .fa-regular {
     font-size: 2.1875rem;
     color: white;
     padding: .625rem;
 }
 
-footer .container .center .progress-bar {
+footer .center .progress-bar {
     height: .25rem;
     appearance: none;
     width: 100%;
@@ -231,21 +232,23 @@ footer .container .center .progress-bar {
     justify-content: center;
 }
 
-footer .container .center .container-p-b {
+footer .center .container-p-b {
     align-items: center;
     padding-bottom: .9375rem;
+    color: gray;
+    font-size: 12px;
 }
 
-footer .container .right {
+footer .right {
     margin: .3125rem;
 }
 
-footer .container .right div .fa-solid {
+footer .right div .fa-solid {
     color: white;
     margin: .3125rem;
 }
 
-footer .container .right .progress-bar {
+footer .right .progress-bar {
     border: .125rem solid gray;
     width: 3.125rem;
 }

@@ -26,19 +26,18 @@
 <body>
     <!-- Header -->
     <header>
-        <section id="upgrade">
+        <!-- <section id="upgrade"> -->
             <div class="container d-flex justify-end align-center">
                 <div><button type="button">EFFETTUA L'UPGRADE</button></div>
             </div>
-        </section>
+        <!-- </section> -->
     </header>
     <!-- /Header -->
     <!-- Main -->
-    <main>
-        <div class="container-center d-flex">
+    <main class="d-flex">
             <!-- Sidebar -->
-            <section id="sidebar">
-                <div class="container d-flex column justify-between">
+                <div class="sidebar d-flex column justify-between">
+                    <!-- Top sidebar -->
                     <ul>
                         <li><img src="img/logo-small.svg" alt="logo-small" class="mobile"><img src="img/logo.svg"
                                 alt="logo" class="desktop"></li>
@@ -48,10 +47,13 @@
                         <li><img src="img/libreria.svg" alt="libreria"><span class="desktop">La tua libreria</span></li>
                         </li>
                     </ul>
+                    <!-- /Top sidebar -->
                     <!-- Desktop playlist sidebar -->
                     <div class="navigation d-flex column desktop">
-                        <h2>Playlist</h2>
-                        <strong><i class="fa-solid fa-plus"></i>Crea playlist</strong>
+                        <div class="header-playlist">
+                            <h2>Playlist</h2>
+                            <strong><i class="fa-solid fa-plus"></i>Crea playlist</strong>
+                        </div>
                         <div class="playlist-name">
                             <ul>
                                 <li>Nome Playlist</li>
@@ -66,18 +68,18 @@
                         </div>
                     </div>
                     <!-- /Desktop playlist sidebar -->
+                    <!-- Bottom sidebar -->
                     <ul>
                         <li><img src="img/download.svg" alt="download"><span class="desktop">Installa app</span></li>
                         </li>
                         <li><img src="img/profile.svg" alt="profile"><span class="desktop">John Doe</span></li>
                         </li>
                     </ul>
+                    <!-- Bottom sidebar -->
                 </div>
-            </section>
             <!-- /Sidebar -->
             <!-- Center menu -->
-            <section id="main-menu">
-                <div class="container">
+                <div class="main-menu">
                     <div>
                         <ul class="d-flex">
                             <li><a href="#"></a>IN EVIDENZA</li>
@@ -188,14 +190,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
             <!-- /Center menu -->
-        </div>
     </main>
     <!-- /Main -->
     <!-- Footer -->
-    <footer>
-        <div class="container d-flex justify-between align-center">
+    <footer class="d-flex justify-between align-center">
+        
             <div class="left d-flex align-center justify-start">
                 <div><img src="img/sinister.jpeg" alt="sinister"></div>
                 <div class="desctiption-song">
@@ -228,7 +228,7 @@
                 <div><i class="fa-solid fa-volume-high"></i></div>
                 <div class="progress-bar"></div>
             </div>
-        </div>
+        
     </footer>
     <!-- /Footer -->
 </body>
