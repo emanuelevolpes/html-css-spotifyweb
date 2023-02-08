@@ -27,6 +27,8 @@
 
     #sidebar .navigation {
         margin-bottom: 12.5rem;
+        min-height: 6.25rem;
+        overflow: auto;
     }
 
     #sidebar .navigation h2,
@@ -38,11 +40,16 @@
         color: white;
     }
 
-    #sidebar .navigation ul {
+    /* #sidebar .navigation .playlist-name{
+        min-height: 6.25rem;
+        overflow: auto;
+    } */
+
+    #sidebar .navigation .playlist-name ul {
         list-style: none;
     }
 
-    #sidebar .navigation ul li {
+    #sidebar .navigation .playlist-name ul li {
         color: gray;
         font-weight: lighter;
         padding-bottom: .625rem;
