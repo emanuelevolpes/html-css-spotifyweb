@@ -1,0 +1,63 @@
+@media screen and (min-width: 552px) {
+
+
+    #sidebar .container {
+        width: 14.375rem;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #sidebar .container ul li img.desktop {
+        width: 80%;
+        height: 5rem;
+    }
+
+    #sidebar .container ul li span {
+        color: white;
+        font-weight: lighter;
+        margin-left: .625rem;
+        display: inline;
+    }
+
+    #sidebar .navigation {
+        margin-bottom: 17.5rem;
+    }
+
+    #sidebar .navigation h2,
+    #sidebar .navigation strong {
+        padding-bottom: .625rem;
+    }
+
+    #sidebar .navigation h2 {
+        color: white;
+    }
+
+    #sidebar .navigation ul {
+        list-style: none;
+    }
+
+    #sidebar .navigation ul li {
+        color: gray;
+        font-weight: lighter;
+        padding-bottom: .625rem;
+    }
+
+    #sidebar .navigation strong i {
+        background-color: gray;
+        color: black;
+        font-size: 1.25rem;
+        padding: .625rem;
+        margin-right: .3125rem;
+        margin-bottom: .625rem;
+    }
+
+    #sidebar .navigation strong {
+        color: gray;
+    }
+}

@@ -1,7 +1,7 @@
 /*
-------
+--------
 Reset
-------
+--------
 */
 
 * {
@@ -11,9 +11,9 @@ Reset
 }
 
 /*
-------
+---------
 Common
-------
+---------
 */
 
 .d-flex {
@@ -32,6 +32,10 @@ Common
     justify-content: center;
 }
 
+.justify-start {
+    justify-content: flex-start;
+}
+
 .justify-end {
     justify-content: flex-end;
 }
@@ -48,10 +52,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
 /*
-------
+--------
 Header
-------
+--------
 */
 
 #upgrade {
@@ -81,35 +93,35 @@ Main
 ------
 */
 
-#sidebar {
-    background-color: black;
-}
-
 #sidebar .container {
+    background-color: black;
     height: 100vh;
     padding: .625rem;
+    width: 3.125rem;
 }
 
-#sidebar .container .top-sidebar div {
+#sidebar .container ul li img {
+    width: 1.875rem;
     margin-bottom: .625rem;
-    width: 1.5625rem;
+    vertical-align: middle;
 }
 
-#sidebar .container .bottom-sidebar {
-    margin-bottom: 6.25rem;
+#sidebar .container ul li img.mobile {
+    width: 1.875rem;
 }
 
-#top-main {
+#main-menu {
     background-color: #141922;
+    padding: 1.25rem;
 }
 
-#top-main .container {
+#main-menu .container {
     overflow: auto;
-    height: 100vh;
-    margin: 6.875rem 1.875rem 6.875rem 1.875rem;
+    height: calc(100vh - 130px);
+    margin-top: 5.625rem;
 }
 
-#top-main .container div ul {
+#main-menu .container div ul {
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
@@ -117,7 +129,7 @@ Main
     gap: 1.25rem;
 }
 
-#top-main .container div ul li {
+#main-menu .container div ul li {
     color: gray;
     text-align: center;
     font-size: .8125rem;
@@ -146,12 +158,10 @@ Main
     color: white;
 }
 
-strong {
+.song strong {
     color: gray;
     font-size: .625rem;
 }
-
-
 
 .col div img.einaudi,
 .col div img.lana {
@@ -160,21 +170,15 @@ strong {
 }
 
 /*
-------
+---------
 Footer
-------
+---------
 */
 
 footer {
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100%;
-    z-index: 1;
-}
-
-footer .container {
-    height: 5.625rem;
 }
 
 footer .container .left div img {
@@ -195,6 +199,16 @@ footer .container .left .fa-regular {
     margin-left: 1.25rem;
 }
 
+footer .container .center {
+    width: 60%;
+    margin: 0 1.25rem;
+}
+
+footer .container .left,
+footer .container .right {
+    width: 20%;
+}
+
 footer .container .center div .fa-solid {
     font-size: 1.25rem;
     color: white;
@@ -210,13 +224,14 @@ footer .container .center div .fa-regular {
 footer .container .center .progress-bar {
     height: .25rem;
     appearance: none;
-    width: 80%;
+    width: 100%;
     margin: .125rem;
     border-radius: .5rem;
     background-color: #5e5e5e;
+    justify-content: center;
 }
 
-footer .container .center .container-p-b{
+footer .container .center .container-p-b {
     align-items: center;
     padding-bottom: .9375rem;
 }
