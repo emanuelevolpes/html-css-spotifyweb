@@ -1,0 +1,5 @@
+@media screen and (min-height:350px){
+    body{
+        height: 21.875rem;
+    }
+}
