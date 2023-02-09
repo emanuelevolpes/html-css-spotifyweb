@@ -115,15 +115,6 @@ main {
     vertical-align: middle;
 }
 
-.sidebar ul li.home {
-    margin: 0 -0.625rem;
-    border-left: .1875rem solid #adff2f;
-}
-
-.sidebar ul li.home img{
-    margin-left: 7px;
-}
-
 .sidebar ul li img.mobile {
     width: 1.875rem;
 }

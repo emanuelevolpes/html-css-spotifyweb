@@ -43,6 +43,15 @@
         font-size: .875rem;
     }
 
+    .sidebar ul li.home {
+        margin: 0 -0.625rem;
+        border-left: .1875rem solid #adff2f;
+    }
+
+    .sidebar ul li.home img{
+        margin-left: 7px;
+    }
+
     .sidebar .navigation .header-playlist h2,
     .sidebar .navigation .header-playlist strong {
         padding-bottom: .625rem;
