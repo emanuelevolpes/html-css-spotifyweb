@@ -27,7 +27,11 @@ footer .right div .fa-solid:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-/* 
-.image:hover .overlay {
-    opacity: 0,8;
-} */
+
+.col .cover:hover .overlay {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    bottom: 150px;
+}
