@@ -1,0 +1,33 @@
+.sidebar ul li span:hover,
+.main-menu div ul li a:hover,
+.sidebar .navigation .playlist-name ul li:hover,
+.sidebar .navigation .header-playlist strong:hover {
+    color: white;
+    cursor: pointer;
+}
+
+header .container button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer .left .desctiption-song small:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer .left .fa-regular:hover {
+    color: white;
+    cursor: pointer;
+}
+
+footer .center div .fa-solid:hover,
+footer .center div .fa-regular:hover,
+footer .right div .fa-solid:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* 
+.image:hover .overlay {
+    opacity: 0,8;
+} */

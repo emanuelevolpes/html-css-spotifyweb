@@ -86,7 +86,7 @@ header .container button {
     border-radius: 2.5rem;
     color: white;
     background-color: rgba(0, 0, 0, 0.2);
-    margin-right: .625rem;
+    margin-right: .9375rem;
 }
 
 /*
@@ -115,6 +115,15 @@ main {
     vertical-align: middle;
 }
 
+.sidebar ul li.home {
+    margin: 0 -0.625rem;
+    border-left: .1875rem solid #adff2f;
+}
+
+.sidebar ul li.home img{
+    margin-left: 7px;
+}
+
 .sidebar ul li img.mobile {
     width: 1.875rem;
 }
@@ -135,9 +144,17 @@ main {
 }
 
 .main-menu div ul li {
-    color: gray;
     text-align: center;
     font-size: .8125rem;
+}
+
+.main-menu div ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.main-menu div ul li:first-child a{
+    border-bottom: .125rem solid #adff2f;
 }
 
 .song h2 {
@@ -158,6 +175,31 @@ main {
     width: 100%;
     margin-bottom: 1.25rem;
 }
+
+/* .col div.image{
+    position: absolute;
+}
+
+.col div.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+
+.col div.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4.375rem;
+} */
 
 .col h3 {
     color: white;
@@ -255,5 +297,6 @@ footer .right div .fa-solid {
 
 footer .right .progress-bar {
     border: .125rem solid gray;
+    border-radius: .5rem;
     width: 3.125rem;
 }

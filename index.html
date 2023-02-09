@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/sm.css">
     <link rel="stylesheet" href="css/md.css">
     <link rel="stylesheet" href="css/lg.css">
+    <link rel="stylesheet" href="css/effects.css">
 </head>
 
 <body>
@@ -37,9 +38,8 @@
         <div class="sidebar d-flex column justify-between">
             <!-- Top sidebar -->
             <ul>
-                <li><img src="img/logo-small.svg" alt="logo-small" class="mobile"><img src="img/logo.svg" alt="logo"
-                        class="desktop"></li>
-                <li><img src="img/home.svg" alt="home"><span class="desktop">Home</span></li>
+                <li><img src="img/logo-small.svg" alt="logo-small" class="mobile"><img src="img/logo.svg" alt="logo" class="desktop"></li>
+                <li class="home"><img src="img/home.svg" alt="home"><span class="desktop">Home</span></li>
                 <li><img src="img/search.svg" alt="search"><span class="desktop">Cerca</span></li>
                 <li><img src="img/libreria.svg" alt="libreria"><span class="desktop">La tua libreria</span></li>
             </ul>
@@ -75,12 +75,12 @@
         <div class="main-menu">
             <div>
                 <ul class="d-flex">
-                    <li><a href="#"></a>IN EVIDENZA</li>
-                    <li><a href="#"></a>PODCAST</li>
-                    <li><a href="#"></a>CLASSIFICHE</li>
-                    <li><a href="#"></a>GENERI E MOOD</li>
-                    <li><a href="#"></a>NUOVE USCITE</li>
-                    <li><a href="#"></a>SCOPRI</li>
+                    <li><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
                 </ul>
             </div>
             <div class="song">
@@ -88,7 +88,14 @@
                 <div class="row d-flex wrap">
                     <div class="col">
                         <div>
-                            <img src="img/metal_lifting.jpg" alt="metal">
+                            <div class="image">
+                                <img src="img/metal_lifting.jpg" alt="metal">
+                                <!-- <div class="overlay">
+                                    <div class="content">
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div> -->
+                            </div>
                             <div class="description">
                                 <h3>Heavy Metal</h3>
                                 <strong>Subtitle</strong>
@@ -193,8 +200,7 @@
             <div><img src="img/sinister.jpeg" alt="sinister"></div>
             <div class="desctiption-song">
                 <div><strong>Sinister</strong></div>
-                <div><small>Brano</small></div>
-                <div><small>Nome</small></div>
+                <div><small>Brano nome</small></div>
             </div>
             <div>
                 <div><i class="fa-regular fa-heart"></i></div>
